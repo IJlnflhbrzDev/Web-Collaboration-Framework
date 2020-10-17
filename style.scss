@@ -1,0 +1,124 @@
+*{
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height:2000px;
+  font-family: sans-serif;
+}
+
+// Aliasss 
+h1, h2 , h3  , h5 , h6 , p{
+  text-align: center !important;
+  
+}
+a{
+  text-decoration: none !important;
+ 
+}
+
+#Navbar { 
+  a{
+    &:hover {
+      border-bottom: 2px solid rgb(5, 255, 255);
+    }
+  }
+}
+
+.card{  
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px blue ;
+  transition: all 1s ease ;
+  border: 0;
+     opacity : 0.5 ;
+     img{
+  opacity: 0.7;
+ 
+     }
+     
+  &:hover{
+    opacity: 1;
+    transform: rotateY(20deg) ;
+    
+    cursor: pointer;
+    transition: all 0.55s ease-in-out;
+  }
+}
+// End Alias
+// Style Jumbotron Bootstrap 
+#Jumbotron {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('https://www.ringcentral.co.uk/blog/wp-content/uploads/2019/11/collaboration-and-collaboration-in-2020.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover ;
+  h1 { 
+    color:#827717 ;
+  font-weight: bold;
+  text-shadow: 3px 0 3px black;
+  }
+  
+  
+}
+// Style Jumbotron Bootstrap 
+
+
+#parallax-1 { 
+ background-image: url('https://ziliun.com/wp-content/uploads/2016/06/collaboration-illustration.jpg');
+ background-position: top ;
+ background-attachment: fixed;
+ background-size: cover ;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ height: 50vh;
+ h3 {
+   background-color: #827717 ;
+   letter-spacing: 2px;
+   
+   border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px !important;
+ } 
+}
+
+
+
+
+
+
+// ================================================================RESPONSIVE BREAKPOINTS===================================================================================
+@media (max-width: 576px) {
+  #Jumbotron   {
+    height: 90vh;
+    h1{
+      font-size:45px;
+    }
+  }
+
+  
+
+#parallax-1 {
+  h3{
+    font-size: 30px !important; 
+  }
+}
+
+ }
+// ================================================================END RESPONSIVE BREAKPOINTS===================================================================================
+// <!-- <div class="card">
+// <img src="./collaboration.png" class="card-img-top" alt="...">
+// <div class="card-body">
+//   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+//     content.</p>
+// </div>
+// </div> -->

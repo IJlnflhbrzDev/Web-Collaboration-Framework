@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 2000px;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h5, h6, p {
+  text-align: center !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#Navbar a:hover {
+  border-bottom: 2px solid #05ffff;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 1px 1px blue;
+          box-shadow: 1px 1px 1px blue;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  border: 0;
+  opacity: 0.5;
+}
+
+.card img {
+  opacity: 0.7;
+}
+
+.card:hover {
+  opacity: 1;
+  -webkit-transform: rotateY(20deg);
+          transform: rotateY(20deg);
+  cursor: pointer;
+  -webkit-transition: all 0.55s ease-in-out;
+  transition: all 0.55s ease-in-out;
+}
+
+#Jumbotron {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("https://www.ringcentral.co.uk/blog/wp-content/uploads/2019/11/collaboration-and-collaboration-in-2020.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#Jumbotron h1 {
+  color: #827717;
+  font-weight: bold;
+  text-shadow: 3px 0 3px black;
+}
+
+#parallax-1 {
+  background-image: url("https://ziliun.com/wp-content/uploads/2016/06/collaboration-illustration.jpg");
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+}
+
+#parallax-1 h3 {
+  background-color: #827717;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px !important;
+}
+
+@media (max-width: 576px) {
+  #Jumbotron {
+    height: 90vh;
+  }
+  #Jumbotron h1 {
+    font-size: 45px;
+  }
+  #parallax-1 h3 {
+    font-size: 30px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
