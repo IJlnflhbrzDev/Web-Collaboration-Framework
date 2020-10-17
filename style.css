@@ -42,10 +42,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -54,8 +50,7 @@ a {
           align-items: center;
   background: url("https://www.ringcentral.co.uk/blog/wp-content/uploads/2019/11/collaboration-and-collaboration-in-2020.jpg");
   background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  background-position: top;
 }
 
 #Jumbotron h1 {
@@ -67,7 +62,6 @@ a {
 #parallax-1 {
   background-image: url("https://ziliun.com/wp-content/uploads/2016/06/collaboration-illustration.jpg");
   background-position: top;
-  background-attachment: fixed;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,6 +72,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-attachment: fixed;
   height: 50vh;
 }
 
@@ -143,10 +138,15 @@ a {
 
 @media (max-width: 576px) {
   #Jumbotron {
-    height: 90vh;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
   }
   #Jumbotron h1 {
     font-size: 45px;
+  }
+  #parallax-1 {
+    background-attachment: scroll;
   }
   #parallax-1 h3 {
     font-size: 30px !important;
