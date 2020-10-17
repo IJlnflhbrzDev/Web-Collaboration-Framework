@@ -47,7 +47,7 @@ a {
 }
 
 #Jumbotron {
-  height: 100vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,6 +97,31 @@ a {
   color: white;
   font-weight: bold;
   font-size: 40px !important;
+}
+
+.info-panel-card {
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -100px;
+  background-color: #faf7f6;
+  text-align: center;
+}
+
+.info-panel-card h4 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.info-panel-card p {
+  font-size: 14px;
+}
+
+.info-panel-card i {
+  margin-right: 10px;
+  color: #4e342e;
+  font-size: 100px;
+  margin-top: 20px;
 }
 
 @media (max-width: 576px) {

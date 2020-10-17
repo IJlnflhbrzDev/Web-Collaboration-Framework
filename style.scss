@@ -50,7 +50,7 @@ a{
 // End Alias
 // Style Jumbotron Bootstrap 
 #Jumbotron {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,9 +91,30 @@ a{
  } 
 }
 
+.info-panel-card { 
+  box-shadow:  0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius : 12px;
+  margin-top: -100px;
+  background-color: #faf7f6  ;
+  
+  
+  text-align: center;
 
-
-
+  h4{
+    font-size: 25px;
+    font-weight: 700;
+  }
+  p{
+    font-size: 14px;
+  }
+  
+  i{
+    margin-right: 10px;
+    color: #4e342e ;
+   font-size: 100px;
+   margin-top: 20px;
+  }
+}
 
 
 // ================================================================RESPONSIVE BREAKPOINTS===================================================================================
